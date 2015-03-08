@@ -7,9 +7,13 @@
 #ifndef _Temperature_H_
 #define _Temperature_H_
 #include "Arduino.h"
-//add your includes for the project Temperature here
 
-//end of add your includes here
+#include "TemperatureDevice.h"
+
+#define RESOLUTION 12      // the desired resolution for the measurement
+#define MAX_NUM_DEVICES 16 // the maximum number of devices, adjust if necessary
+
+//some stuff for eclipse plugin/cc
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -18,11 +22,6 @@ void setup();
 #ifdef __cplusplus
 } // extern "C"
 #endif
-
-//add your function definitions for the project Temperature here
-
-
-
 
 //Do not add code below this line
 #endif /* _Temperature_H_ */
